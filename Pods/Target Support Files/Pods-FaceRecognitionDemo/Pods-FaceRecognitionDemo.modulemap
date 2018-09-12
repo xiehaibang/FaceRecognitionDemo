@@ -1,0 +1,6 @@
+framework module Pods_FaceRecognitionDemo {
+  umbrella header "Pods-FaceRecognitionDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

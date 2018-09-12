@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07DD7559EA43812A1DCFE21D /* Pods_FaceRecognitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AC34D7E099ACF025B6E9EE /* Pods_FaceRecognitionDemo.framework */; };
 		188712602148BD38009D4462 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1887125F2148BD38009D4462 /* AppDelegate.m */; };
 		188712632148BD38009D4462 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188712622148BD38009D4462 /* ViewController.m */; };
 		188712662148BD38009D4462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188712642148BD38009D4462 /* Main.storyboard */; };
@@ -51,6 +52,9 @@
 		1887127E2148BD4C009D4462 /* FaceRecognitionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceRecognitionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		188712822148BD4C009D4462 /* FaceRecognitionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceRecognitionDemoUITests.m; sourceTree = "<group>"; };
 		188712842148BD4C009D4462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3944AB12A64AC016302AE2 /* Pods-FaceRecognitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceRecognitionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceRecognitionDemo/Pods-FaceRecognitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9BA409DD16DA43F165E86853 /* Pods-FaceRecognitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceRecognitionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceRecognitionDemo/Pods-FaceRecognitionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B1AC34D7E099ACF025B6E9EE /* Pods_FaceRecognitionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceRecognitionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07DD7559EA43812A1DCFE21D /* Pods_FaceRecognitionDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				188712762148BD4C009D4462 /* FaceRecognitionDemoTests */,
 				188712812148BD4C009D4462 /* FaceRecognitionDemoUITests */,
 				1887125C2148BD38009D4462 /* Products */,
+				552C9E024F0A4D78D8CA54BB /* Pods */,
+				9C6A8FD8946BB2CCF5BE0151 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = FaceRecognitionDemoUITests;
 			sourceTree = "<group>";
 		};
+		552C9E024F0A4D78D8CA54BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A3944AB12A64AC016302AE2 /* Pods-FaceRecognitionDemo.debug.xcconfig */,
+				9BA409DD16DA43F165E86853 /* Pods-FaceRecognitionDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C6A8FD8946BB2CCF5BE0151 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1AC34D7E099ACF025B6E9EE /* Pods_FaceRecognitionDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 188712872148BD4C009D4462 /* Build configuration list for PBXNativeTarget "FaceRecognitionDemo" */;
 			buildPhases = (
+				4C334E90EE5BD69EFABFD6D7 /* [CP] Check Pods Manifest.lock */,
 				188712572148BD38009D4462 /* Sources */,
 				188712582148BD38009D4462 /* Frameworks */,
 				188712592148BD38009D4462 /* Resources */,
+				11FDC8AA6A123F80808FA374 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +220,7 @@
 		188712532148BD37009D4462 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XHB;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = xiehaibang;
 				TargetAttributes = {
@@ -256,6 +283,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11FDC8AA6A123F80808FA374 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FaceRecognitionDemo/Pods-FaceRecognitionDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaceRecognitionDemo/Pods-FaceRecognitionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C334E90EE5BD69EFABFD6D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceRecognitionDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		188712572148BD38009D4462 /* Sources */ = {
@@ -431,6 +497,7 @@
 		};
 		188712882148BD4C009D4462 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3944AB12A64AC016302AE2 /* Pods-FaceRecognitionDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +515,7 @@
 		};
 		188712892148BD4C009D4462 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA409DD16DA43F165E86853 /* Pods-FaceRecognitionDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
